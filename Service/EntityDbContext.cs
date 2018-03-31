@@ -4,14 +4,20 @@ using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Reflection;
+using Entity;
 
 namespace Service
 {
-    public class EnttiyDbContext : DbContext
+    public class EntityDbContext : DbContext
     {
         //TODO: Update connection string
-        public EnttiyDbContext(): base("name=connectionstring")
+        public EntityDbContext(): base("name=connectionstring")
         {
+        }
+
+        public new IDbSet<TEntity> Set<TEntity>() where TEntity : BaseEntity
+        {
+            return base.Set<TEntity>();
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

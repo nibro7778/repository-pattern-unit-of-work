@@ -18,6 +18,11 @@ namespace Service
             _context = context;
         }
 
+        public UnitOfWork()
+        {
+            _context = new EntityDbContext();
+        }
+
         public void Dispose()
         {
             Dispose(true);

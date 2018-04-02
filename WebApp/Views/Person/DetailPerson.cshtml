@@ -1,0 +1,51 @@
+﻿@model Entity.Person
+@{
+    ViewBag.Title = "Detail Person";
+}
+<div class="book-example panel panel-primary">
+    <div class="panel-heading panel-head">Book Detail</div>
+    <div class="panel-body">
+        <div class="form-horizontal">
+            <div class="form-group">
+                @Html.LabelFor(model => model.Name, new { @class = "col-lg-1 control-label" })
+                <div class="col-lg-9">
+                    @Html.DisplayFor(model => model.Name, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.City, new { @class = "col-lg-1 control-label" })
+                <div class="col-lg-9">
+                    @Html.DisplayFor(model => model.City, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Country, new { @class = "col-lg-1 control-label" })
+                <div class="col-lg-9">
+                    @Html.DisplayFor(model => model.Country, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ContactNumber, new { @class = "col-lg-1 control-label" })
+                <div class="col-lg-9">
+                    @Html.DisplayFor(model => model.ContactNumber, new { @class = "form-control" })
+                </div>
+            </div>
+
+            @using (Html.BeginForm())
+            {
+                <div class="form-group">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-9">
+                        @Html.ActionLink("Edit", "CreateEditPerson",
+                             new { id = Model.Id }, new { @class = "btn btn-primary" })
+                        @Html.ActionLink("Back to List", "Index",
+                             null, new { @class = "btn btn-success" })
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div> 

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{1655A7BA-2478-4D8C-9EB0-07CCE3B9117B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{6F1A799E-A462-44F5-BEB9-578B3D976D05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1655A7BA-2478-4D8C-9EB0-07CCE3B9117B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1655A7BA-2478-4D8C-9EB0-07CCE3B9117B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1655A7BA-2478-4D8C-9EB0-07CCE3B9117B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F1A799E-A462-44F5-BEB9-578B3D976D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1A799E-A462-44F5-BEB9-578B3D976D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1A799E-A462-44F5-BEB9-578B3D976D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1A799E-A462-44F5-BEB9-578B3D976D05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

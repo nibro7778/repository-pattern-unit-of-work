@@ -10,7 +10,7 @@ namespace Service
 {
     public class EntityDbContext : DbContext
     {
-        //TODO: Update connection string
+        //TODO: Update connection string from config file
         public EntityDbContext(): base("name=connectionstring")
         {
         }
